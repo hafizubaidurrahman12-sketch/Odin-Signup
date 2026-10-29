@@ -1,0 +1,85 @@
+/* Box sizing reset for mobile layouts */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+form {
+    background-color: rgba(255, 255, 255, 0.95); /* Slight transparency so the fern image peaks through softly */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+/* Vertical stacking for form groups */
+form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #374151;
+    letter-spacing: 0.5px;
+}
+
+/* Touch-friendly input styling */
+input, select {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 1rem;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    background-color: #ffffff;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+    -webkit-appearance: none; /* Uniform styling across Android/iOS */
+}
+
+/* Active touch/focus state */
+input:focus, select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* Interacted Valid States */
+input:user-valid, select:user-valid {
+    border-color: #16a34a;
+    background-color: #f0fdf4;
+}
+
+/* Interacted Invalid States */
+input:user-invalid, select:user-invalid {
+    border-color: #dc2626;
+    background-color: #fef2f2;
+}
+
+/* Submit Button */
+.submit-btn button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #3f6212;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.submit-btn button:active {
+    background-color: #365314;
+}

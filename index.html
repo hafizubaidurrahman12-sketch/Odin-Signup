@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>sign up</title>
+</head>
+<body>
+    <h1>Sign up!</h1>
+    <p>This is a practice project, not a real service. Your data will not leave your device.</p>
+    <form action="https://httpbin.org/post" method="post">
+        <div class="firstname">
+            <label for="first_name">FIRST NAME:</label>        
+            <input type="text" name="first_name" placeholder="e.g : Ali" id="first_name" required>
+        </div>
+        
+        <div class="lastname">
+            <label for="last_name">LAST NAME:</label>        
+            <input type="text" name="last_name" placeholder="e.g : Raza" id="last_name" required>   
+        </div>
+        <div class="gender">
+            <label for="gender">Gender:</label>
+            <select name="Gender" id="gender" required>
+  <option value="" disabled selected>Select your gender</option>                    
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+  <option value="Rather-not-to-say">Rather not to say</option>
+      </select>
+        </div>
+        <div class="dateofbirth">
+            <label for="dob">date of birth:</label>
+            <input type="date" name="dob" id="dob" required>  
+        </div>
+        
+        <div class="email">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="e.g : example@example.com" required>
+        </div>
+        <div class="phone">
+    <label for="phone">Phone Number:</label>
+    <input type="tel" name="phone" id="phone" placeholder="e.g : 555-0192" required>
+</div>
+        <div class="password">
+            <label for="user_password">Password:</label>
+            <input type="password" name="password" id="user_password" minlength="8" required>
+        </div>
+        <div class="conpassword">
+        <label for="user_conpassword">Confirm Password:</label>
+        <input type="password" name="conpassword" id="user_conpassword" minlength="8" required>
+        </div>
+        <div class="submit-btn">
+            <button type="submit">Sign Up</button>
+        </div>
+    </form>
+</body>
+</html>
